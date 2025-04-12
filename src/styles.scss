@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  // background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,100 @@
+header .container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo h3 {
+  font-weight: bold;
+}
+
+.menu {
+  width: 650px;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.Register {
+  background-color: #4caf4f;
+  // padding: 10px;
+  padding: 6px 16px;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Register a {
+  display: flex;
+  gap: 10px;
+}
+a {
+  width: 100%;
+  color: #4d4d4d;
+
+  text-decoration: none;
+}
+
+i {
+  display: none;
+  color: #4caf4f;
+  font-weight: bold;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .menu ul {
+    flex-direction: column;
+    position: absolute;
+    // justify-content: center;
+    // text-align: center;
+    top: 30px;
+    right: 35px;
+    padding: 10px 0;
+    display: none; // الأساسي: تخفي القائمة
+    z-index: 9999;
+    border-radius: 10px;
+    background-color: #4caf4f;
+  }
+
+  .menu ul.show {
+    display: flex;
+    // width: 100%;
+  }
+  li {
+  }
+
+  .menu ul li a {
+    transition: 0.5s;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .menu ul li:hover a {
+    border-bottom: 1px solid #fff;
+  }
+
+  i {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #4caf4f;
+  }
+
+  .menu {
+    // width: auto;
+  }
+}
