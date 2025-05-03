@@ -1,0 +1,138 @@
+footer {
+  background: #263238;
+  color: #ffffff;
+  padding: 30px;
+  .container {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    div {
+      // width: calc(100% / 3);
+    }
+    .header {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        h1 {
+          margin: 0;
+        }
+      }
+      .copy {
+        font-weight: 400;
+        color: #f5f7fa;
+        margin-bottom: 30px;
+        // padding: 10px;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+      }
+    }
+    .links-content {
+      display: flex;
+      gap: 25px;
+      align-items: start;
+      // justify-content: space-between;
+      height: 100%;
+      .links {
+        h3 {
+          font-size: 28px;
+          margin: 0;
+          margin-bottom: 40px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 0;
+          li {
+            list-style: none;
+          }
+        }
+      }
+    }
+
+    .up-date {
+      position: relative;
+      h3 {
+        // text-align: center;
+        font-size: 28px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      .input-wrapper {
+        position: relative;
+        width: 100%;
+
+        input {
+          color: #fff;
+          background-color: #515b60;
+          padding: 15px;
+          border: none;
+          outline: none;
+          border-radius: 10px;
+          width: 100%;
+        }
+
+        svg {
+          position: absolute;
+
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-wrap: wrap;
+    .up-date {
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    .container {
+      flex-direction: column;
+
+      .header {
+        h1 {
+          margin-bottom: 0;
+        }
+
+        flex-direction: column;
+        align-items: start;
+
+        .copy {
+          margin-bottom: 10px;
+        }
+      }
+      .up-date {
+        // margin-top: 30px;
+        h3 {
+          // margin-bottom: 10px;
+        }
+        .input-wrapper {
+          width: 50%;
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

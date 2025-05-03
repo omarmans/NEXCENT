@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  // background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    // text-align: center;
+  }
+}
+
+// /* التصميم الأساسي للموبايل */
+// body {
+//   font-size: 16px;
+//   background-color: #f5f5f5;
+// }
+
+// /* تابلت */
+// @media (min-width: 577px) and (max-width: 768px) {
+//   body {
+//     font-size: 17px;
+//     background-color: #e0f7fa;
+//   }
+// }
+
+// /* لابتوب صغير */
+// @media (min-width: 769px) and (max-width: 992px) {
+//   body {
+//     font-size: 18px;
+//     background-color: #b2ebf2;
+//   }
+// }
+
+// /* شاشات متوسطة */
+// @media (min-width: 993px) and (max-width: 1200px) {
+//   body {
+//     font-size: 19px;
+//     background-color: #80deea;
+//   }
+// }
+
+// /* شاشات كبيرة */
+// @media (min-width: 1201px) {
+//   body {
+//     font-size: 20px;
+//     background-color: #4dd0e1;
+//   }
+// }
+
+.hidden-before-scroll {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}

@@ -1,0 +1,117 @@
+.container {
+  background-color: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .img {
+    svg {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .content {
+    p {
+      color: #717171;
+    }
+    h3 {
+      color: #4caf4f;
+      margin: 0;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    h4 {
+      color: #89939e;
+      font-size: 14px;
+      margin: 0;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .shepherds {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .imgs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        flex: 1;
+
+        svg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        gap: 5px;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        color: #4caf4f;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.5s;
+
+        svg {
+          width: 10px;
+          height: 10px;
+        }
+        &:hover {
+          svg {
+            animation: goUp 1s infinite ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes goUp {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .shepherds {
+    .imgs {
+      flex-wrap: wrap;
+      margin-right: 5px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    // flex-direction: column;
+    // text-align: center;
+    padding: 10px;
+  }
+  .shepherds {
+    flex-direction: column;
+    .imgs {
+      flex-wrap: wrap;
+      margin-right: 5px;
+    }
+  }
+}
